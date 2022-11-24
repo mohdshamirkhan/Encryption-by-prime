@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char a[10],res[10],p[10];
+	int b,sum,i,sub;
+	printf("enter the password");
+	for(i=0;i<10;i++)
+	{
+	scanf("%s",&a[i]);
+	printf("The ascii value of the given password: %d",a[i]);
+	}
+	printf("Enter the prime no.");
+	scanf("%d",&b);
+	printf("\n");
+	for(i=0;i<10;i++)
+	{
+	sum=a[i]+b;
+	res[i]=sum;
+	printf("%d",sum);
+	}
+	for(i=0;i<10;i++)
+	{
+	printf("%s   ",res[i]);
+	}
+	printf("\n");
+	for(i=0;i<10;i++)
+	{
+	sum=a[i]-b;
+	res[i]=sum;
+	printf("%d",sum);
+	}
+	for(i=0;i<10;i++)
+	{
+	sub=a[i]-b;
+	p[i]=sub;
+	printf("%d",sub);
+	}
+	getch();
+	}
